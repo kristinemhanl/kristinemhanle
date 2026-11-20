@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Kristine Le Personal Webpage</title>
+      <!--
+         Kristine Le Personal Webpage Main Page
+         Filename: index.html
+      
+         Author: Kristine Le
+         Date: 07/09/2025
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="modernizr-custom.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <p class="skipnavigation"><a href="#main">Skip navigation</a>
+      </p>
+      <header>
+         <h3><img src="images/cloud.png" width="200" height="100" alt="cloud"></h3>
+         <div class="heading">
+            <h1>Kristine Le</h1>
+            <h2>Personal Webpage</h2>
+         </div>
+         <h4><img src="images/cloud.png" width="200" height="100" alt="cloud"></h4>
+         <div id="currentTime"></div>
+         <h5>America/ New York EST</h5>
+         <div class="weather">
+            <div class="weather-display">
+               <span id="weather-icon" class="weather-icon">☀️</span>
+               <span id="weather-temp" class="weather-temp">72&deg;F</span>
+            </div>
+            <div id="weather-location" class="weather-location">Boston, MA</div>
+      </header>
+      <div class="container">
+         <ul class="nav-straight">
+            <li>
+               <a href="index.html">Home</a>
+            </li>
+            <li>
+               <a href="aboutme.html">About Me</a>
+            </li>
+            <li>
+               <a href="academics.html">Academics</a>
+            </li>
+            <li>
+               <a href="work.html">Work Experience</a>
+            </li>
+            <li>
+               <a href="contact.html">Contact Me</a>
+            </li>
+         </ul>
+      </div>
+      <article id="contentstart">
+         <h2>Contact Me!</h2>
+         <p>I'd love to hear from you! Whether you have questions about my work, want to discuss a project, or just want to connect, feel free to reach out using the form below.<p>
+         <form action="results.html">
+            <p class="form-instructions"> *indicates a required field -- Please provide either Email or Phone Number</p>
+            <fieldset class="contactinfo">
+               <label for="nameinput">
+                  Name
+                  <input type="text" id="nameinput" name="Name " required>
+               </label>
+               <label for="emailinput">
+                  Email
+                  <input type="email" id="emailinput" name="Email ">
+               </label>
+               <label for="phoneinput">
+                  Phone
+                  <input type="tel" id="phoneinput" name="Phone ">
+               </label>
+               <div class="pink-cloud"><img src="images/pink-cloud.png" width="350" height="300" alt="pink cloud text bubble"></div>
+               <div class="reminder">Please make sure you're inputting the right information, take time to check it over ◡̈</div>
+            </fieldset>
+            <fieldset class="additionalinfo">
+               <label for="notes">
+                  Any specific questiones or notes? Drop it down below!
+                  <textarea id="notes" name="Notes " rows="5"></textarea>
+               </label>
+            </fieldset>
+            <fieldset class="submitbutton">
+               <input type="submit" id="submit" value="Submit">
+            </fieldset>
+         </form>
+      </article>
+      <script src="time.js"></script>
+   </body>
+   </html>

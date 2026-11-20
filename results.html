@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Kristine Le Personal Webpage</title>
+      <!--
+         Kristine Le Personal Webpage Main Page
+         Filename: index.html
+      
+         Author: Kristine Le
+         Date: 07/11/2025
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="modernizr-custom.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <p class="skipnavigation"><a href="#main">Skip navigation</a>
+      </p>
+      <header>
+        <h3><img src="images/cloud.png" width="200" height="100" alt="cloud"></h3>
+        <div class="heading">
+            <h1>Kristine Le</h1>
+            <h2>Personal Webpage</h2>
+        </div>
+        <h4><img src="images/cloud.png" width="200" height="100" alt="cloud"></h4>
+        <div id="currentTime"></div>
+        <h5>America/ New York EST</h5>
+        <div class="weather">
+            <div class="weather-display">
+               <span id="weather-icon" class="weather-icon">☀️</span>
+               <span id="weather-temp" class="weather-temp">72&deg;F</span>
+            </div>
+            <div id="weather-location" class="weather-location">Boston, MA</div>
+        </div>
+    </header>
+    <div class="container">
+        <ul class="nav-straight">
+            <li>
+               <a href="index.html">Home</a>
+            </li>
+            <li>
+               <a href="aboutme.html">About Me</a>
+            </li>
+            <li>
+               <a href="academics.html">Academics</a>
+            </li>
+            <li>
+               <a href="work.html">Work Experience</a>
+            </li>
+            <li>
+               <a href="contact.html">Contact Me</a>
+            </li>
+         </ul>
+    </div>
+    <div class="heart-divid">💖˚ ༘ ೀ⋆｡˚💖</div>
+    <article id="constart">
+        <h2>Your form has been submitted!</h2>
+        <h1>Form Summary~</h1>
+        <script>
+        var formData = location.search;
+        formData = formData.substring(1, formData.length);
+        while (formData.indexOf("+") !== -1) {
+            formData = formData.replace("+", " ");
+        }
+        formData = decodeURIComponent(formData);
+        var formArray = formData.split("&");
+        for (var i = 0; i < formArray.length; i = i + 1) {
+            var item = formArray[i].replace("=", " = ");
+            document.write("<p>" + item + "</p>");
+        }
+        </script>
+        <div class="white-flower">
+            <a><img src="images/white-flower.png" height="200" width="200" alt="white flower"></a>
+        </div>
+    </article>
+    <div class="thankform">
+        <p>Thank you for filling out this form. Please give me at least 2 business day to respond! Thank you for your cooperation!</p>
+    </div>
+    <div class="heart-divi">💖˚ ༘ ೀ⋆｡˚💖</div>
+    <footer>
+    <div class="social">
+        <ul>
+            <p class="follow">ꨄ︎ Follow my work and get in touch through social media ꨄ︎</p>
+        </ul>
+        <ul class="media">
+            <li>
+               <a href="https://www.instagram.com/kkrisnle/">Instagram</a>
+            </li>
+            <li>
+               <a href="https://www.linkedin.com/in/kristine-le-a01175440/">LinkedIn</a>
+            </li>
+         </ul>
+    </div>
+      </footer>
+      <script src="time.js"></script>
+    </body>
+</html>
